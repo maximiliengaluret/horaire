@@ -9,8 +9,34 @@
     <style>
         #horaire {
             display : grid;
-            grid-template-columns: .2fr repeat(5,1fr);
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(10, 1fr);
         }
+
+        #horaire div {
+            border : 1px solid #aaa;
+        }
+
+        .lundi {
+            grid-row : 2/10;
+            border : 1px solid #aaa;
+        }
+        .mardi{
+            grid-row : 2/5;
+        }
+        .mercredi{
+            grid-row : 2/5;
+        }
+        .jeudi_1{
+            grid-row : 2/3;
+        }
+        .jeudi_2{
+            grid-row : 3/6;
+        }
+        .vendredi{
+            grid-row : 2/10;
+        }
+
         #horaire div:nth-child(even) {
            background-color : #ddd;
         } 
@@ -19,16 +45,15 @@
 <body>
     <main id='horaire'>
   
-        <div> </div><div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div>
-       <div>8</div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
-       <div>9</div><div></div><div></div><div></div><div></div><div></div>
-       <div>10</div><div></div><div></div><div></div><div></div><div></div>
-       <div>11</div><div></div><div></div><div></div><div></div><div></div>
-       <div>12</div><div></div><div></div><div></div><div></div><div></div>
-       <div>13</div><div></div><div></div><div></div><div></div><div></div>
-       <div>14</div><div></div><div></div><div></div><div></div><div></div>
-       <div>15</div><div></div><div></div><div></div><div></div><div></div>
-       <div>16</div><div></div><div></div><div></div><div></div><div></div>
+        <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div>
+                <div class='lundi'>Projet de recherche</div>
+                <div class='mardi'>Veille technologique</div>
+                <div class='mercredi'>Veille technologique</div>
+                <div class='jeudi_1'>Projet de fin d'étude</div>
+                <div classe='jeudi_2'>Veille technologique</div>
+                <div class='vendredi'>Veille technologique</div>
+
+             
 
     </main>    
 </body>
