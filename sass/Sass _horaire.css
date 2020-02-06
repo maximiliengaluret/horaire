@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*-----------------------------------------------------
+Auteur : Maximilien Galuret
+Description : Interface web Horaire avec sass
+
+---- Table des matières ----
+INDEX des fichiers SCSS
+#_grid
+#_police
+
+/*------------------------------------------------------
+# Gestion des GRID
+-----------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+h1,
+h2,
+#horaire div p:nth-child(1) {
+  font-weight: bold;
+  text-shadow: 5px 3px 5px #9cc4ca;
+  margin: 5px;
+  padding: 0;
+}
+
+#horaire div p:nth-child(1) {
+  font-size: 1.5em;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*# sourceMappingURL=Sass _horaire.css.map */
